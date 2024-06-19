@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CTM</title>
+</head>
+<body>
+    <section class="">
+        <form class="max-w-2xl mx-auto px-6 container mt-10 mb-10 md:mt-20 md:mb-20">
+            <div class="flex flex-col space-y-8 justify-center bg-Gris rounded-lg shadow-xl px-10 py-10 md:px-20 md:py-20">
+                <!-- Titulo -->
+                <h3 class="mt-16 text-3xl lg:text-4xl font-semibold text-center text-Naranaja lg:mt-0 mb-10">Registro Empresas reclutadoras</h3>
+                <!-- Nombre de la empresa -->
+                <div class="relative z-0 w-full group">
+                    <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required />
+                    <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre de la empresa</label>
+                </div>
+                <!-- Giro comercial -->
+                <div class="relative z-0 w-full group">
+                    <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required />
+                    <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Giro comercial</label>
+                </div>
+                <!-- Correo electronico -->
+                <div class="relative z-0 w-full group">
+                    <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required />
+                    <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Correo electronico</label>
+                </div>
+                <!-- Telefono -->
+                <div class="relative z-0 w-full group">
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required />
+                    <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Número de teléfono</label>
+                </div>
+                <!-- Sector -->
+                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Seleccione su sector</label>
+                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-Naranaja focus:border-Naranaja block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-Naranaja dark:focus:border-Naranaja">
+                  <option>Automotriz</option>
+                  <option>Pymes</option>
+                  <option>Educativo</option>
+                  <option>Salud</option>
+                </select>
+                <!-- Descripción de la empresa  -->
+                <label for="message" class="block text-sm font-medium text-gray-900 dark:text-white">Descripción</label>
+                <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-Naranaja focus:border-Naranaja dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-Naranaja dark:focus:border-Naranaja" placeholder="Añada una breve descripción de su empresa..."></textarea>
+                <!-- Pais -->
+                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Seleccione su país</label>
+                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-Naranaja focus:border-Naranaja block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-Naranaja dark:focus:border-Naranaja">
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>France</option>
+                  <option>Germany</option>
+                </select>
+                <!-- Estado/CP -->
+                <div class="grid md:grid-cols-2 md:gap-6">
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required />
+                        <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Estado</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required />
+                        <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Código Postal</label>
+                    </div>
+                  </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
