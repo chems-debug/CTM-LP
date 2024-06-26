@@ -1,7 +1,6 @@
 let inputName = document.getElementById('Empresa')
 let inputEmail = document.getElementById('Correo')
 let inputNumber = document.getElementById('Telefono')
-// let inputRol = document.getElementById('rol')
 let inputCiudad = document.getElementById('Ciudad')
 let selectCountrie = document.getElementById('paises')
 let inputState = document.getElementById('Estado')
@@ -26,7 +25,6 @@ btnRegistro.addEventListener("click",e=>{
         display_name: inputName.value,
         email: inputEmail.value,
         numero_telefono: inputNumber.value,
-        // role: inputRol.value,
         pais: selectCountrie.value,
         ciudad: inputCiudad.value,
         estado: inputState.value, 
