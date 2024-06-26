@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CTM</title>
+</head>
+<body>
+    <section class="">
+        <form class="max-w-2xl mx-auto px-6 container mt-10 mb-10 md:mt-20 md:mb-20">
+            <div class="flex flex-col space-y-8 justify-center bg-Gris rounded-lg shadow-xl px-10 py-10 md:px-20 md:py-20">
+                <!-- Titulo -->
+                <h3 class="mt-16 text-3xl lg:text-4xl font-semibold text-center text-Naranaja lg:mt-0 mb-10">Registro Empresas Visitantes</h3>
+                <!-- Nombre de la empresa -->
+                <div class="relative z-0 w-full group">
+                    <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required  id="Empresa" />
+                    <label class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre de la empresa</label>
+                </div>
+                <!-- Correo electronico -->
+                <div class="relative z-0 w-full group">
+                    <input type="email" name="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required id="Correo" />
+                    <label class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Correo electronico</label>
+                </div>
+                <!-- Telefono -->
+                <div class="relative z-0 w-full group">
+                    <input type="tel" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required id="Telefono" />
+                    <label class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Número de teléfono</label>
+                </div>
+                <!-- Rol -->
+                <div class="relative z-0 w-full group">
+                    <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required  id="rol"/>
+                    <label class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Rol de su empresa</label>
+                </div>
+                <!-- Ciudad -->
+                <div class="relative z-0 w-full group">
+                    <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required id="Ciudad" />
+                    <label  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Ciudad</label>
+                </div>
+                <!-- Pais -->
+                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Seleccione su país</label>
+                <select id="paises" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-Naranaja focus:border-Naranaja block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-Naranaja dark:focus:border-Naranaja"></select>
+                <!-- Estsado -->
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-Naranaja focus:outline-none focus:ring-0 focus:border-Naranaja peer" placeholder=" " required id="Estado" />
+                    <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Estado</label>
+                </div>
+                <!-- Boton -->
+                <button class="text-lg bg-Naranaja text-white uppercase py-2 px-10 rounded-lg shadow-lg hover:scale-105" id="btn_registro">Registrarse</button>
+            </div>
+        </form>
+    </section>
+    <script src="Script4.js"></script>
+</body>
+</html>
