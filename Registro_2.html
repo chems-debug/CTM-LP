@@ -8,7 +8,7 @@
 </head>
 <body>
     <section class="bg-gray-200">
-        <form class="max-w-2xl mx-auto px-6 container pt-10 pb-10 md:pt-20 md:pb-20">
+        <form class="max-w-2xl mx-auto px-6 container pt-10 pb-10 md:pt-20 md:pb-20"  id="Formulario">
             <div class="flex flex-col space-y-8 justify-center bg-white rounded-lg shadow-xl px-10 py-10 md:px-20 md:py-20">
                 <!-- Titulo -->
                 <h3 class="mt-16 text-3xl lg:text-4xl font-semibold text-center text-Naranaja lg:mt-0 mb-10">Registro Empresas Visitantes</h3>
@@ -41,10 +41,12 @@
                     <label class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-Naranaja peer-focus:dark:text-Naranaja peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Estado</label>
                 </div>
                 <!-- Boton -->
-                <button class="text-lg bg-Naranaja text-white uppercase py-2 px-10 rounded-lg shadow-lg hover:scale-105 font-semibold" id="btn_registro">Registrarse</button>
+                <button class="text-lg bg-Naranaja text-white uppercase py-2 px-10 rounded-lg shadow-lg hover:scale-105 font-semibold opacity-50" id="btn_registro" type="submit" disabled>Registrarse</button>
+                <p class="hidden text-rose-500 text-xs mt-2"></p>
             </div>
         </form>
     </section>
-    <script src="Script4.js"></script>
+    <script src="JS/Registro_02.js"></script>
+    <script src="JS/Validar_02.js"></script>
 </body>
 </html>

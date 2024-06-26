@@ -8,7 +8,7 @@
 </head>
 <body>
     <section class="bg-gray-200">
-        <form class="max-w-2xl mx-auto px-6 container pt-10 pb-10 md:pt-20 md:pb-20">
+        <form class="max-w-2xl mx-auto px-6 container pt-10 pb-10 md:pt-20 md:pb-20" id="Formulario">
             <div class="flex flex-col space-y-8 justify-center bg-white rounded-lg shadow-xl px-10 py-10 md:px-20 md:py-20">
                 <!-- Titulo -->
                 <h3 class="mt-16 text-3xl lg:text-4xl font-semibold text-center text-Naranaja lg:mt-0 mb-10">Registro Empresas Reclutadoras</h3>
@@ -41,8 +41,12 @@
                 <label class="block mb-2 text-sm font-medium text-gray-900">Seleccione su sector</label>
                 <select id="sectores" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-Naranaja focus:border-Naranaja block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-Naranaja dark:focus:border-Naranaja"></select>
                 <!-- Descripción de la empresa  -->
-                <label class="block text-sm font-medium text-gray-900">Descripción</label>
-                <textarea rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-Naranaja focus:border-Naranaja" placeholder="Añada una breve descripción de su empresa..." id="Descripcion"></textarea>
+                <!-- <label class="block text-sm font-medium text-gray-900">Descripción</label> -->
+                <!-- <textarea class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-Naranaja focus:border-Naranaja" placeholder="Añada una breve descripción de su empresa..." id="Descripcion"></textarea> -->
+                <div class="flex flex-col space-y-2 mt-5">
+                    <h1 class="block text-sm font-medium text-gray-900">Descripción</h1>
+                    <textarea  id="Descripcion" class="border border-gray-600 px-5 py-2 rounded-xl h-32" placeholder="Añada una breve descripción de su empresa..."></textarea>
+                </div>
                 <!-- Pais -->
                 <label class="block mb-2 text-sm font-medium text-gray-900">Seleccione su país</label>
                 <select id="paises" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-Naranaja focus:border-Naranaja block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-Naranaja dark:focus:border-Naranaja"></select>
@@ -58,10 +62,12 @@
                     </div>
                   </div>
                   <!-- Boton -->
-                  <button href="#" class="text-lg bg-Naranaja text-white uppercase py-2 px-10 rounded-lg shadow-lg hover:scale-105" id="btn_registro">Registrarse</button>
+                  <button class="text-lg bg-Naranaja text-white uppercase py-2 px-10 rounded-lg shadow-lg hover:scale-105 opacity-50" id="btn_registro" type="submit">Registrarse</button>
+                  <p class="hidden text-rose-500 text-xs "></p>
             </div>
         </form>
     </section>
-    <script src="Script3.js"></script>
+    <script src="JS/Registro_01.js"></script>
+    <!-- <script src="Form.js"></script> -->
 </body>
 </html>
