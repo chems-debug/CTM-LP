@@ -31,7 +31,7 @@ let inputNumber = document.getElementById('Telefono')
 let inputDescription = document.getElementById('Descripcion')
 let inputState = document.getElementById('Estado')
 let inputCP = document.getElementById('CP')
-let inputRol = document.getElementById('rol')
+// let inputRol = document.getElementById('rol')
 let inputDireccion = document.getElementById('Direccion')
 let btnRegistro = document.getElementById('btn_registro')
 
@@ -41,7 +41,7 @@ btnRegistro.addEventListener("click",e=>{
         email: inputEmail.value,
         sector: selectSector.value,
         numero_telefono: inputNumber.value,
-        role: inputRol.value,
+        // role: inputRol.value,
         descripcion: inputDescription.value,
         direccion: inputDireccion.value,
         pais: selectCountrie.value,
@@ -50,22 +50,22 @@ btnRegistro.addEventListener("click",e=>{
         codigo_postal: inputCP.value
     }
     console.log(data)
-    // let settings = {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //      },
-    //     body:JSON.stringify(data)
-    //   }
+    let settings = {
+         method: "POST",
+         headers: {
+           "Content-Type": "application/json",
+          },
+         body:JSON.stringify(data)
+       }
     
-    // fetch("https://virtualbusinessc.com/api/v1/registroEmpresaWeb", settings)
-    // .then(res=>res.json())
-    // .then(json=>{
-    //   console.log(json)
-    // })
-    // .catch(er=>{
-    //    console.log(er)
-    // })
+     fetch("https://virtualbusinessc.com/api/v1/registroEmpresaWeb", settings)
+     .then(res=>res.json())
+     .then(json=>{
+       console.log(json)
+     })
+     .catch(er=>{
+        console.log(er)
+     })
 })
 
 
