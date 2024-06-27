@@ -37,12 +37,12 @@ btnRegistro.addEventListener("click",e=>{
            "Content-Type": "application/json",
           },
          body:JSON.stringify(data)
-      }
+    }
     
-     fetch("https://virtualbusinessc.com/api/v1/registroVisitanteWeb", settings)
-     .then(res=>res.json())
-     .then(json=>{
-       console.log(json)
+    fetch("https://virtualbusinessc.com/api/v1/registroVisitanteWeb", settings)
+    .then(res=>res.json())
+    .then(json=>{
+    console.log(json)
         if(json.message){
             alert(json.message)
         }
@@ -50,8 +50,8 @@ btnRegistro.addEventListener("click",e=>{
             let error = Object.values(json.error).join(', ')
             alert(error)
         }
-     })
+    })
      .catch(er=>{
        console.log(er)
-     })
+    })
 })

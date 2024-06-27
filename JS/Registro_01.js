@@ -63,6 +63,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
         .then(res=>res.json())
         .then(json=>{
         console.log(json)
+        if(json.message){
+            alert(json.message)
+        }
+        else if(json.error){
+            let error = Object.values(json.error).join(', ')
+            alert(error)
+        }
         })
         .catch(er=>{
             console.log(er)
